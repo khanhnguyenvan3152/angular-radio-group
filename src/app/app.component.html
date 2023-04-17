@@ -1,0 +1,10 @@
+<app-radio-group [items]="items" [(ngModel)]="selectedOption" label="label" value="value" (ngModelChange)="onModelChange($event)" [templateClass]="'flex flex-row w-64 h-32'">
+  <ng-template appRadioTemplate let-item="item" let-index="index">
+    <label [attr.for]="'radio_'+ index">
+      {{item.label}}
+      {{selectedOption == item.value ? 'checked': ''}}
+    </label>
+    <input type="radio" [attr.id]="'radio_'+ index" name="radioInput" [value]="item.value" class="hidden" />
+    <hr *ngIf="index < items.length - 1">
+  </ng-template>
+</app-radio-group>
