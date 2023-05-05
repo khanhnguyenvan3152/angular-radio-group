@@ -1,0 +1,9 @@
+<div *ngIf="iconPrefix?.templateRef" style="padding-right: 12px;" class="icon">
+    <ng-container [ngTemplateOutlet]="iconPrefix.templateRef"></ng-container>
+</div>
+<div>
+    <ng-content></ng-content>
+</div>
+<div *ngIf="iconSufix?.templateRef" style="padding-left: 12px;" class="icon">
+    <ng-container [ngTemplateOutlet]="iconSufix.templateRef"></ng-container>
+</div>

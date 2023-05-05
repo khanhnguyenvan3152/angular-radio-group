@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ShareModule } from '../share.module';
 import { CommonModule } from '@angular/common';
+import { SharedModule } from 'src/share/shared.module';
 
 @Component({
   selector: 'app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   standalone: true,
-  imports: [ShareModule, FormsModule, CommonModule],
+  imports: [ShareModule, FormsModule, CommonModule, SharedModule],
 })
 export class AppComponent implements OnInit {
   public selectedOption = 1;
