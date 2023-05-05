@@ -2,7 +2,6 @@ import {
   Component,
   ContentChild,
   HostBinding,
-  ViewChild,
   Input,
 } from '@angular/core';
 import { IconPrefixDirective } from '../directives/iconPrefix.directive';

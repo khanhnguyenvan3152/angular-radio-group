@@ -37,4 +37,8 @@ export class AppComponent implements OnInit {
   onModelChange(event) {
     console.log(event)
   }
-}
+
+  handleClick() {
+    console.log("click button")
+  }
+} 
