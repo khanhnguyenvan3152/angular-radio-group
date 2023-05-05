@@ -20,7 +20,7 @@ export class ButtonComponent {
   @ContentChild(IconPrefixDirective) iconPrefix!: IconPrefixDirective;
   @ContentChild(IconSufixDirective) iconSufix!: IconSufixDirective;
   ngOnInit(): void {}
-  //return classes base on variant, size
+  //return classes base on variant, size ex: trudi-btn trudi-btn-large trudi-btn-primary...
   @HostBinding('attr.class') get classes() {
     return 'trudi-btn';
   }
