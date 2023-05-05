@@ -1,9 +1,10 @@
-<div *ngIf="iconPrefix?.templateRef" style="padding-right: 12px;" class="icon">
-    <ng-container [ngTemplateOutlet]="iconPrefix.templateRef"></ng-container>
+<!-- Padding to be replaced by size of button -->
+<div *ngIf="iconPrefix?.templateRef" class="pr-2">
+  <ng-container [ngTemplateOutlet]="iconPrefix.templateRef"></ng-container>
 </div>
 <div>
-    <ng-content></ng-content>
+  <ng-content></ng-content>
 </div>
-<div *ngIf="iconSufix?.templateRef" style="padding-left: 12px;" class="icon">
-    <ng-container [ngTemplateOutlet]="iconSufix.templateRef"></ng-container>
+<div *ngIf="iconSufix?.templateRef" class="pl-2">
+  <ng-container [ngTemplateOutlet]="iconSufix.templateRef"></ng-container>
 </div>
